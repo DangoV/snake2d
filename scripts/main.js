@@ -148,3 +148,19 @@ document.addEventListener("keydown", function (e) {
 		snake.dy = 0;
 	}
 });
+
+document.addEventListener("keydown", function (e) {
+	if ( e.code == "ArrowUp" ) {
+		snake.dy = -config.sizeCell;
+		snake.dx = 0;
+	} else if ( e.code == "ArrowLeft" ) {
+		snake.dx = -config.sizeCell;
+		snake.dy = 0;
+	} else if ( e.code == "ArrowDown" ) {
+		snake.dy = config.sizeCell;
+		snake.dx = 0;
+	} else if ( e.code == "ArrowRight" ) {
+		snake.dx = config.sizeCell;
+		snake.dy = 0;
+	}
+});
